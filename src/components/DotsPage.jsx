@@ -5,11 +5,11 @@ function DotsPage() {
     return (
         <div style={{textAlign: 'center'}}>
             <div>
-                <Link>
+                <Link to='/Jubair Hasan Architects'>
                     <div className='sky-circle'></div>
                 </Link>
 
-                <Link>
+                <Link to='/Roofliners Studio of Architecture'>
                     <div className='blue-circle'></div>
                 </Link>
 
@@ -17,27 +17,27 @@ function DotsPage() {
                     <div className='red-circle'></div>
                 </Link>
 
-                <Link>
+                <Link to='/Form.3 Architects'>
                     <div className='magenta-circle'></div>
                 </Link>
                 
-                <Link>
+                <Link to='/Sthanik+Studio Morphogenesis'>
                     <div className='green-circle'></div>
                 </Link>
                 
-                <Link>
+                <Link to='/Group of Architects and Thinkers (GOAAT)'>
                     <div className='lime-circle'></div>
                 </Link>
                 
-                <Link>
+                <Link to='/River & Rain'>
                     <div className='purple-circle'></div>
                 </Link>
                 
-                <Link>
+                <Link to='/Studio Dhaka'>
                     <div className='violet-circle'></div>
                 </Link>
                 
-                <Link>
+                <Link to='/Cubeinside Design Limited'>
                     <div className='orange-circle'></div>
                 </Link>
             </div>
