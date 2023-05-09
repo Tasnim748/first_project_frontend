@@ -4,6 +4,8 @@
     right: 75.9%;
     top: 34.48%;
     bottom: 61.37%;
+    width: 29px;
+    height: 29px;
 
     background: #3670AE;
     border-radius: 50%;
@@ -15,6 +17,8 @@
     right: 55.64%;
     top: 41.59%;
     bottom: 54.27%;
+    width: 29px;
+    height: 29px;
 
     background: #CE4136;
     border-radius: 50%;
@@ -26,6 +30,8 @@
     right: 25.38%;
     top: 35.19%;
     bottom: 60.66%;
+    width: 29px;
+    height: 29px;
 
     background: #CF3673;
     border-radius: 50%;
@@ -37,6 +43,8 @@
     right: 5.13%;
     top: 37.2%;
     bottom: 58.65%;
+    width: 29px;
+    height: 29px;
 
     background: #332C7D;
     border-radius: 50%;
@@ -48,6 +56,8 @@
     right: 45.38%;
     top: 48.93%;
     bottom: 46.92%;
+    width: 29px;
+    height: 29px;
 
     background: #E1973E;
     border-radius: 50%;
@@ -59,6 +69,8 @@
     right: 15.13%;
     top: 49.29%;
     bottom: 46.56%;
+    width: 29px;
+    height: 29px;
 
     background: #9EBC45;
     border-radius: 50%;
@@ -70,6 +82,8 @@
     right: 85.9%;
     top: 55.45%;
     bottom: 40.4%;
+    width: 29px;
+    height: 29px;
 
     background: #5AA76C;
     border-radius: 50%;
@@ -81,6 +95,8 @@
     right: 65.64%;
     top: 48.93%;
     bottom: 46.92%;
+    width: 29px;
+    height: 29px;
 
     background: #87307E;
     border-radius: 50%;
@@ -92,6 +108,8 @@
     right: 35.38%;
     top: 57.46%;
     bottom: 38.39%;
+    width: 29px;
+    height: 29px;
 
     background: #5D327E;
     border-radius: 50%;
@@ -99,10 +117,10 @@
 
 .text {
     position: absolute;
-    width: 195px;
-    height: 87px;
-    left: 97px;
-    top: 653px;
+    width: 20%;
+    height: 10%;
+    bottom: 15%;
+    left: 23%;
 
     font-family: 'Menlo';
     font-style: normal;
