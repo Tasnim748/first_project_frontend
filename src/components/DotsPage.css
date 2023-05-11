@@ -1,3 +1,7 @@
+a {
+    display: inline-block;
+}
+
 .sky-circle {
     position: absolute;
     left: 15.13%;
@@ -116,17 +120,17 @@
 }
 
 .text {
-    position: absolute;
-    width: 20%;
-    height: 10%;
-    bottom: 15%;
-    left: 23%;
-
+    padding-top: 600px;
+    padding-bottom: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
     font-family: 'Menlo';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
+    text-align: 'center';
+    display: block;
 
     color: #000000;
 }

@@ -11,43 +11,36 @@ function DotsPage() {
             exit={{opacity: 0}}
         >
             <div>
-                <Link to='/Jubair Hasan Architects'>
-                    <div className='sky-circle'></div>
+                <Link className='sky-circle' to='/Jubair Hasan Architects'>
                 </Link>
 
-                <Link to='/Roofliners Studio of Architecture'>
-                    <div className='blue-circle'></div>
+                <Link className='blue-circle' to='/Roofliners Studio of Architecture'>
                 </Link>
 
-                <Link to='/Dehsar Works'>
-                    <div className='red-circle'></div>
+                <Link className='red-circle' to='/Dehsar Works'>
                 </Link>
 
-                <Link to='/Form.3 Architects'>
-                    <div className='magenta-circle'></div>
+                <Link className='magenta-circle' to='/Form.3 Architects'>
                 </Link>
                 
-                <Link to='/Sthanik+Studio Morphogenesis'>
-                    <div className='green-circle'></div>
+                <Link className='green-circle' to='/Sthanik+Studio Morphogenesis'>
                 </Link>
                 
-                <Link to='/Group of Architects and Thinkers (GOAAT)'>
-                    <div className='lime-circle'></div>
+                <Link className='lime-circle' to='/Group of Architects and Thinkers (GOAAT)'>
                 </Link>
                 
-                <Link to='/River & Rain'>
-                    <div className='purple-circle'></div>
+                <Link className='purple-circle' to='/River & Rain'>
                 </Link>
                 
-                <Link to='/Studio Dhaka'>
-                    <div className='violet-circle'></div>
+                <Link className='violet-circle' to='/Studio Dhaka'>
                 </Link>
                 
-                <Link to='/Cubeinside Design Limited'>
-                    <div className='orange-circle'></div>
+                <Link className='orange-circle' to='/Cubeinside Design Limited'>
                 </Link>
             </div>
-            <div className='text'>Bridging Binaries</div>
+            <div className='text' >
+                Bridging Binaries
+            </div>
         </motion.div>
     );
 }

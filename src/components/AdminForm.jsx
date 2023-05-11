@@ -3,7 +3,13 @@ import { useState, useRef, useEffect } from "react";
 import { IMG_UPLOAD_URL, IMG_URL, COMPANY_URL, LOCAL_IMG_UPLOAD_URL, LOCAL_IMG_URL, LOCAL_COMPANY_URL } from "../imgData";
 
 function AdminForm() {
+    // this is for project and company home image file
     const [selectedFile, setSelectedFile] = useState(null);
+
+    // this is for company about file
+    const [aboutFile, setAboutFile] = useState(null);
+
+
     const [companies, setCompanies] = useState([]);
 
     const titleRef = useRef();
@@ -11,6 +17,7 @@ function AdminForm() {
     const companyRef = useRef();
 
     const cname = useRef();
+    const cDescriptionRef = useRef();
 
 
     useEffect(() => {
@@ -61,6 +68,10 @@ function AdminForm() {
         setSelectedFile(event.target.files[0]);
     };
 
+    const handleAboutFileChange = (event) => {
+        setAboutFile(event.target.files[0]);
+    };
+
     const CompanyUplaod = (e) => {
         console.log(cname.current.value);
         e.preventDefault();
@@ -79,7 +90,6 @@ function AdminForm() {
             cname.current.value = '';
             setSelectedFile(null);
             e.target.companyImg.value = null;
-           
         })
         .catch((error) => {
             console.log(error);
@@ -90,38 +100,62 @@ function AdminForm() {
 /*......................................................................................*/
     return (
         <>
+        <form style={{paddingTop: '18%', margin: '3rem'}} onSubmit={handleProjectUpload}>
+            <div className="mb-3">
+            <input className="form-control" accept="image/*" name="projectImg" required onChange={handleProjectFileChange} type="file" id="formFile" />
+            </div>
 
-        <form style={{margin: '5rem'}} onSubmit={handleProjectUpload}>
             <div className="mb-3">
-            <input className="form-control" accept="image/*" name="projectImg" onChange={handleProjectFileChange} type="file" id="formFile" />
+            <input type="text" required className="form-control" placeholder="Title" ref={titleRef} />
             </div>
+
             <div className="mb-3">
-            <input type="text" className="form-control" placeholder="Title" ref={titleRef} />
+            <input type="text" required className="form-control" placeholder="Description" ref={descriptionRef} />
             </div>
+
             <div className="mb-3">
-            <input type="text" className="form-control" placeholder="Description" ref={descriptionRef} />
+            <br /><br />
+            <div style={{paddingBottom: '10px'}}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="24" width="24" height="24" rx="12" transform="rotate(90 24 0)" fill="black"/>
+                <path d="M17.2498 5.75L17.2498 17.25L5.74975 17.25" stroke="white" stroke-width="2"/>
+                <path d="M17.0833 17.0835L6.08325 6.0835" stroke="white" stroke-width="2"/>
+                </svg> Studio
             </div>
-            <div className="mb-3">
-            <label htmlFor="form-select">Company</label><br />
             <select className="form-select" aria-label="Default select example" ref={companyRef}>
                 {companies.map(comp => (
                     <option value={comp.title}>{comp.title}</option>
                 ))}
             </select>
             </div>
-            <button type="submit" className="btn btn-success">Submit</button>
+            <div className="d-grid gap-2">
+            <button type="submit" style={{background: 'black', color: 'white', border: 'none', padding: '5px'}}>Submit</button>
+            </div>
         </form>
+        <br />
+        <div style={{textAlign: 'center'}}>
+            <h1 style={{padding: '0 20%', fontSize: '40px', fontWeight: '400'}}>Bridging Binaries</h1>
+        </div>
+        {/* <form style={{margin: '5rem'}} onSubmit={CompanyUplaod}>
 
-        <form style={{margin: '5rem'}} onSubmit={CompanyUplaod}>
             <div className="mb-3">
-            <input className="form-control" accept="image/*" name="companyImg" onChange={handleCompanyFileChange} type="file" id="formFile" />
+                <label htmlFor="formFileHome">Home Image</label>
+                <input className="form-control" accept="image/*" name="companyImg" onChange={handleCompanyFileChange} type="file" id="formFileHome" />
             </div>
             <div className="mb-3">
-            <input type="text" className="form-control" placeholder="Title" ref={cname} />
+                <label htmlFor="formFileAbout">About Image</label>
+                <input className="form-control" accept="image/*" name="aboutImg" onChange={handleAboutFileChange} type="file" id="formFileAbout" />
             </div>
-            <button type="submit" className="btn btn-success">Submit</button>
-        </form>
 
+            <div className="mb-3">
+                <input type="text" className="form-control" placeholder="Title" ref={cname} />
+            </div>
+            <div className="mb-3">
+                <input type="text" className="form-control" placeholder="Description" ref={cDescriptionRef} />
+            </div>
+
+            <button type="submit" className="btn btn-success">Submit</button>
+        </form> */}
         </>
 
     );
