@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 function App() {
   const [show, setShow] = useState(false);
+  const [authenticated, setAuthenticated] = useState(false);
 
   const handleIt = () => {
     setShow(!show);
@@ -20,7 +21,7 @@ function App() {
             </svg>
         </div>
         <SideBar show={show} handleIt={handleIt} />
-        <AnimatedRoutes />
+        <AnimatedRoutes authenticated={authenticated} handleAuth={setAuthenticated} />
     </div>
   );
 }
