@@ -1,12 +1,13 @@
 .title {
     /* Blues Communication Ltd HQ */
     margin-top: 30px;
-    width: 200px;
+    margin-bottom: 18px;
+    width: 300px;
 
     font-family: 'Menlo';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 28px;
     line-height: 28px;
 
     color: #000000;
@@ -15,8 +16,9 @@
 .description {
     /* Client: Blues Communications Ltd Project Type: Commercial Office Space Location: Bhatara, Bashundhara R/A TBA: 7,500 SFT Land area: 10 Katha Design Period: June 2018 Construction Period: July 2018- February 2019 Status Complete */
     margin-top: 10px;
-    width: 200px;
-
+    width: 300px;
+    white-space: pre-wrap;
+    word-break: break-word;
     font-family: 'Gotham';
     font-style: normal;
     font-weight: 300;

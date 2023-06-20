@@ -1,0 +1,13 @@
+.admin-button {
+    background: black;
+    border: 1mm ridge rgba(254, 255, 234, 0.5);
+    padding: 20px;
+    color: white;
+    margin: 20px;
+}
+
+@media (min-width: 910px) {
+    .admin-button {
+        margin: 40px 30%;
+    }
+} 

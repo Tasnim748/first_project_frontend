@@ -1,6 +1,3 @@
-.my-backdrop {
-    opacity: 1;
-    height: 70%;
-    border-radius: 6% 6% 0 0;
-    color: rgba(255, 255, 255, 0.756);
+.studio-about-body a {
+    text-decoration: underline;
 }

@@ -1,0 +1,35 @@
+.slick-dots {
+    position: static;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+/* .slick-dots li button {
+    padding: 2px;
+} */
+
+
+.slider {
+    height: 100%;
+    position: relative;
+}
+
+@media (min-width: 580px) {
+    .slider {
+        height: 100%;
+    }
+    .slick-slide img {
+        height: 55vh;
+    }
+}
+
+@media (min-width: 950px) {
+    .carousel-item {
+        height: 100%;
+    }
+    .carousel-item img {
+        height: 93vh;
+    }
+}

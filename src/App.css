@@ -1,9 +1,9 @@
 body {
   font-family: 'Menlo';
   font-style: normal;
-  
   overflow-x: hidden;
 }
+
 
 html {
   overflow-x: hidden;
@@ -12,6 +12,7 @@ html {
 a {
   text-decoration: none;
   color: black;
+  display: inline-block;
 }
 
 .carousel-wrapper {
